@@ -421,6 +421,16 @@
 .ending .social a:hover svg path {
   fill: hsl(0, 0%, 100%);
 }
+.ending .attribution {
+  font-family: "Barlow", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+.ending .attribution a {
+  color: hsl(198, 62%, 26%);
+}
+.ending .attribution a:hover {
+  color: hsl(7, 99%, 70%);
+}
 
 /** 
 font-family: 'Barlow', sans-serif;
@@ -447,6 +457,9 @@ body {
 .root .land-page .hero .compass a {
   color: hsl(0, 0%, 100%);
   font-family: "Barlow", sans-serif;
+}
+.root .land-page .hero .compass a:hover {
+  background-color: rgba(255, 255, 255, 0.562);
 }
 .root .land-page .hero-text {
   margin-top: 100px;

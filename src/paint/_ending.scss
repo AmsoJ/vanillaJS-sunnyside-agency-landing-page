@@ -31,6 +31,16 @@
             }
         }
     }
+    .attribution {
+        @include typo("1");
+        color: $White;
+        a {
+            color: $Dark-blue-photography-text;
+            &:hover {
+                color: $Soft-red;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
