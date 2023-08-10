@@ -1,0 +1,43 @@
+.ending {
+    min-height: 50vh;
+    background-color: $Dark-moderate-cyan-footer-light;
+    .logo {
+        transform: scale(1.5);
+        .logo-svg {
+            path {
+                fill: $Dark-moderate-cyan-footer;
+            }
+        }
+    }
+    .services {
+        a {
+            color: $Dark-moderate-cyan-footer;
+            @include typo("1");
+            gap: 10px;
+            &:hover {
+                color: $White;
+            }
+        }
+    }
+    .social {
+        a {
+            svg path {
+                fill : $Dark-moderate-cyan-footer;
+            }
+            &:hover {
+                svg path {
+                    fill: $White;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ending {
+        .services {
+            // background-color: white;
+            
+        }
+    }
+}

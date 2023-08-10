@@ -1,0 +1,40 @@
+@import './mixin';
+
+.gallery {
+    min-height: 60vh;
+    // background-color: $Grayish-blue;
+    .pic {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        // animation-timing-function: infinite;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        &:first-child {
+            // background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+            @include keyframing("first");
+        }
+        &:nth-child(2) {
+            // background-image: url(./../images/desktop/image-gallery-orange.jpg);
+            @include keyframing("second");
+        }
+        &:nth-child(3) {
+            // background-image: url(./../images/desktop/image-gallery-cone.jpg);
+            @include keyframing("third");
+        }
+        &:last-child {
+            // background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+            @include keyframing("fourth");
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        .pic {
+            
+        }
+    }
+}

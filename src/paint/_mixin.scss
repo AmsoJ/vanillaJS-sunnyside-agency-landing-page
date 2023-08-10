@@ -1,0 +1,142 @@
+@mixin typo($var) {
+    @if $var == "1" {
+        font-family: 'Barlow', sans-serif;
+    } @else {
+        font-family: 'Fraunces', serif;
+    }
+}
+
+@mixin keyframing($var) {
+    @if $var == "first" {
+        animation-name: first;
+    } @else if $var == "second" {
+        animation-name: second;
+    } @else if $var == "third" {
+        animation-name: third;
+    } @else {
+        animation-name: fourth;
+    }
+}
+
+@keyframes first {
+    0% {
+        background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+    }
+    25% {
+        background-image: url(./../images/desktop/image-gallery-orange.jpg);
+    }
+    50% {
+        background-image: url(./../images/desktop/image-gallery-cone.jpg);
+    }
+    75%, 100% {
+        background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+}
+
+@keyframes second {
+    0% {
+        background-image: url(./../images/desktop/image-gallery-orange.jpg);
+    }
+    25% {
+        background-image: url(./../images/desktop/image-gallery-cone.jpg);
+    }
+    50% {
+        background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+    75%, 100% {
+        background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+    }
+}
+
+@keyframes third {
+    0% {
+        background-image: url(./../images/desktop/image-gallery-cone.jpg);
+    }
+    25% {
+        background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+    50% {
+        background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+    }
+    75%, 100% {
+        background-image: url(./../images/desktop/image-gallery-orange.jpg);
+    }
+}
+
+@keyframes fourth {
+    0% {
+        background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+    25% {
+        background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+    }
+    50% {
+        background-image: url(./../images/desktop/image-gallery-orange.jpg);
+    }
+    75%, 100% {
+        background-image: url(./../images/desktop/image-gallery-cone.jpg);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    @keyframes first {
+        0% {
+            background-image: url(./../images/mobile/image-gallery-milkbottles.jpg);
+        }
+        25% {
+            background-image: url(./../images/mobile/image-gallery-orange.jpg);
+        }
+        50% {
+            background-image: url(./../images/mobile/image-gallery-cone.jpg);
+        }
+        75%, 100% {
+            background-image: url(./../images/mobile/image-gallery-sugar-cubes.jpg);
+        }
+    }
+    
+    @keyframes second {
+        0% {
+            background-image: url(./../images/mobile/image-gallery-orange.jpg);
+        }
+        25% {
+            background-image: url(./../images/mobile/image-gallery-cone.jpg);
+        }
+        50% {
+            background-image: url(./../images/mobile/image-gallery-sugar-cubes.jpg);
+        }
+        75%, 100% {
+            background-image: url(./../images/mobile/image-gallery-milkbottles.jpg);
+        }
+    }
+    
+    @keyframes third {
+        0% {
+            background-image: url(./../images/mobile/image-gallery-cone.jpg);
+        }
+        25% {
+            background-image: url(./../images/mobile/image-gallery-sugar-cubes.jpg);
+        }
+        50% {
+            background-image: url(./../images/mobile/image-gallery-milkbottles.jpg);
+        }
+        75%, 100% {
+            background-image: url(./../images/mobile/image-gallery-orange.jpg);
+        }
+    }
+    
+    @keyframes fourth {
+        0% {
+            background-image: url(./../images/mobile/image-gallery-sugar-cubes.jpg);
+        }
+        25% {
+            background-image: url(./../images/mobile/image-gallery-milkbottles.jpg);
+        }
+        50% {
+            background-image: url(./../images/mobile/image-gallery-orange.jpg);
+        }
+        75%, 100% {
+            background-image: url(./../images/mobile/image-gallery-cone.jpg);
+        }
+    }
+}

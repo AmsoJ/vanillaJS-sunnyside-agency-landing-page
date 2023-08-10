@@ -1,0 +1,28 @@
+.clients-testimonial {
+    min-height: 100vh;
+    background-color: $White;
+    padding: 100px 0;
+    .text-title {
+        @include typo("2");
+        color: $Grayish-blue;
+    }
+    .card-container .card-row {
+        min-height: 350px;
+        .card {
+            .card-body {
+                .card-text {
+                    @include typo("1");
+                    color: $Very-dark-grayish-blue;
+                }
+                .client {
+                    @include typo("2");
+                    color: $Dark-blue-photography-text;
+                }
+                .status {
+                    @include typo("1");
+                    color: $Grayish-blue !important;
+                }
+            }
+        }
+    }
+}
